@@ -4,5 +4,13 @@
   "returnPolicy": "Return Policy",
   "contactUs": "Contact Us",
   "language": "English",
-  "title":"home page"
+  "title": "home page",
+  "searchBtn": "Categories",
+  "placeholderSearch": "Search for a product",
+  "navLinks": {
+    "home": "Home",
+    "about": "About Us",
+    "offers": "Offers",
+    "products": "Products"
+  }
 }

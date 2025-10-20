@@ -4,5 +4,13 @@
   "returnPolicy": "سياسة الإرجاع",
   "contactUs": "تواصل معنا",
   "language": "العربية",
-  "title":"الصفحه الرائسيه"
+  "title":"الصفحه الرائسيه",
+  "searchBtn":"التصنيفات",
+  "placeholderSearch":"البحث عن المنتج",
+  "navLinks":{
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "offers": "العروض",
+    "products": "المنتجات"
+  }
 }

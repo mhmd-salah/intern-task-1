@@ -1,0 +1,80 @@
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+nav {
+  position: relative;
+  margin-block: 20px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-links ul {
+      display: flex;
+      position: relative;
+      gap: 20px;
+      li {
+        font-size: 18px;
+      }
+    }
+    .anotherPages {
+      ul {
+        display: flex;
+        gap: 20px;
+        li {
+          font-size: 17px;
+          color: white;
+          width: 35px;
+          height: 35px;
+          background-color: #56878b;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    width: 250px;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    position: absolute;
+    top: 100%;
+    transition: max-height 0.2s ease ;
+    font-size: 13px;
+    ul {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px;
+      li{
+        text-align: center;
+      }
+    }
+  }
+  .nav-links.open {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 500px;
+  }
+  .nav-links li {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-links ul {
+    display: none;
+    background-color: white;
+  }
+}
