@@ -1,0 +1,54 @@
+.topBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2.5rem; 
+  background-color: #bed7d9; 
+  color: #1f2937; 
+  font-size: 0.875rem; 
+}
+
+.topBar-links {
+  display: none;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.topBar-links a {
+  font-size: 13px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.topBar-links a:hover {
+  text-decoration: underline;
+}
+
+.topBar-free-shipping {
+  font-weight: 500;
+  text-align: center;
+}
+
+.topBar-language select {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+@media (min-width:991px){
+  .topBar {
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+  }
+  .topBar-links{
+    display: flex;
+  }
+}

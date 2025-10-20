@@ -1,4 +1,8 @@
 {
-  "title": "Home Page",
-  "description": "This is the main page."
+  "freeShipping": "Free shipping for orders over 950 EGP - Delivery in 2-4 days",
+  "privacyPolicy": "Privacy Policy",
+  "returnPolicy": "Return Policy",
+  "contactUs": "Contact Us",
+  "language": "English",
+  "title":"home page"
 }
