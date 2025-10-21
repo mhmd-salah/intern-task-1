@@ -1,12 +1,17 @@
-import { useTranslation } from "react-i18next";
+import { Banner } from "../components";
+import { Categories } from "../components/home";
+import HeroSection from "../components/home/HeroSection/HeroSection";
+import NewlyArrivedProducts from "../components/home/newlyArrivedProducts/NewlyArrivedProducts";
 
 const Home = () => {
-  const { t } = useTranslation();
-
   return (
     <>
-      <h1 className="text-lg">{t("title")}</h1>
-      <p>{t("description")}</p>
+      <div style={{ background: "#fafafa" }}>
+        <HeroSection />
+        <Categories />
+        <NewlyArrivedProducts />
+        <Banner />
+      </div>
     </>
   );
 };

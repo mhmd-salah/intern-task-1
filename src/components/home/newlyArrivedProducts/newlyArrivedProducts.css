@@ -1,0 +1,27 @@
+.newlyProducts {
+  margin-block: 20px;
+  .container {
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-block-end: 35px;
+      a {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: var(--main-color);
+        font-family: bold;
+      }
+    }
+    .products-list {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+}
+
+

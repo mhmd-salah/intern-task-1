@@ -4,13 +4,26 @@
   "returnPolicy": "سياسة الإرجاع",
   "contactUs": "تواصل معنا",
   "language": "العربية",
-  "title":"الصفحه الرائسيه",
-  "searchBtn":"التصنيفات",
-  "placeholderSearch":"البحث عن المنتج",
-  "navLinks":{
+  "title": "الصفحه الرائسيه",
+  "searchBtn": "التصنيفات",
+  "placeholderSearch": "البحث عن المنتج",
+  "navLinks": {
     "home": "الرئيسية",
     "about": "من نحن",
     "offers": "العروض",
     "products": "المنتجات"
+  },
+  "categories": "الفئات",
+
+  "categoriesList": {
+    "yamishRamadan": "ياميش رمضان",
+    "coffee": "قهوه",
+    "spices": "التتوابل",
+    "oils": "زيوت",
+    "herbs": "اعشاب",
+    "nuts": "مكسرات ",
+    "nutsButter": "ذبدة مكسرات",
+    "seet&cerals": "بذور و حبوب",
+    "flours": "دقيق"
   }
 }

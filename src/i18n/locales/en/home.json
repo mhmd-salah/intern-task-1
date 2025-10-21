@@ -12,5 +12,17 @@
     "about": "About Us",
     "offers": "Offers",
     "products": "Products"
+  },
+  "categories": "Categories",
+  "categoriesList": {
+    "yamishRamadan": "Yamish Ramadan",
+    "coffee": "Coffee",
+    "spices": "Spices",
+    "oils": "Oils",
+    "herbs": "Herbs",
+    "nuts": "Nuts ",
+    "nutsButter": "Nuts Butter",
+    "seet&cerals": "Seet & Cerals",
+    "flours": "Flours"
   }
 }

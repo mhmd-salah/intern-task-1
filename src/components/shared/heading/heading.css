@@ -1,0 +1,7 @@
+.heading {
+  position: relative;
+  font-size: 23px;
+  font-weight: 500;
+  border-inline-start: 4px solid black;
+  padding-inline-start: 10px;
+}

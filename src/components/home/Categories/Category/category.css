@@ -1,0 +1,37 @@
+.category {
+  width: fit-content;
+  margin-block: 20px;
+  .cat-img {
+    position: relative;
+    width: 170px;
+    height: 130px;
+    background-color: #ecf2e7;
+    border-radius: 14px;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 0;
+      transition: height 0.3s ease-out;
+      background: linear-gradient(to top, #56878b, #bed7d906);
+      position: absolute;
+      bottom: 0;
+      border-radius: 14px;
+    }
+    &:hover::before {
+      height: 100%;
+    }
+    img {
+      display: block;
+      width: 120px;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .title {
+    text-align: center;
+    font-size: 20px;
+    margin-block:17px;
+  }
+}

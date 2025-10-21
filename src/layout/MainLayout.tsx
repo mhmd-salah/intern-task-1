@@ -1,13 +1,16 @@
 import { Outlet } from "react-router-dom";
 import TopBar from "../components/shared/topBar/TopBar";
-import { Header, Navbar } from "../components";
+import { Footer, Header, Navbar } from "../components";
 const MainLayout = () => {
   return (
     <>
-      <TopBar />
-      <Header />
-      <Navbar />
+      <div style={{ background: "#fafafa" }}>
+        <TopBar />
+        <Header />
+        <Navbar />
+      </div>
       <Outlet />
+      <Footer />
     </>
   );
 };

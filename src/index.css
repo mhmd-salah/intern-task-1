@@ -1,8 +1,29 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+
+*{
+  user-select: none;
+}
+body{
+  font-family: sans-serif;
+}
+
+:root{
+  --main-color:#56878b;
+  --secondary-color:#bed7d9;
+}
 
 .container {
   padding-inline: 12px;
   margin-inline: auto;
+}
+
+html[lang="ar"] {
+  font-family: "Cairo", sans-serif;
+}
+
+html[lang="en"] {
+  font-family: "Poppins", sans-serif;
 }
 
 @media (min-width: 768px) {

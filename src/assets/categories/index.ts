@@ -1,0 +1,9 @@
+export { default as cat1 } from "./cat1.svg";
+export { default as cat2 } from "./cat2.svg";
+export { default as cat3 } from "./cat3.svg";
+export { default as cat4 } from "./cat4.svg";
+export { default as cat5 } from "./cat9.svg";
+export { default as cat6 } from "./cat6.svg";
+export { default as cat7 } from "./cat7.svg";
+export { default as cat8 } from "./cat8.svg";
+export { default as cat9 } from "./cat9.svg";
