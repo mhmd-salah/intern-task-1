@@ -1,6 +1,6 @@
 .category {
   width: fit-content;
-  margin-block: 20px;
+  margin-block: 10px;
   .cat-img {
     position: relative;
     width: 170px;
@@ -32,6 +32,6 @@
   .title {
     text-align: center;
     font-size: 20px;
-    margin-block:17px;
+    margin-block:12px;
   }
 }

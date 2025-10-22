@@ -1,0 +1,66 @@
+.banner {
+  width: 100%;
+  margin-block: 20px;
+  padding-block: 30px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-side {
+      h3 {
+        color: var(--main-color);
+        font-size: 1.5rem;
+        margin-block-end: 15px;
+      }
+      p {
+        width: 400px;
+        line-height: 1.7;
+      }
+    }
+    .banner-side {
+      width: 50%;
+      .banner-img {
+        border-radius: 14px;
+        position: relative;
+        background-size: cover;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("https://elhenawyco.com/storage//uploadedImages//settings-1717400539.png");
+        display: grid;
+        place-content: center;
+        .text-banner {
+          p {
+            font-size: 26px;
+            color: var(--main-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+          button {
+            background-color: var(--main-color);
+            color: white;
+            padding: 7px 10px;
+            border-radius: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+      .banner-side{
+        width: 100%;
+        order: 1;
+      }
+      .left-side{
+        padding-block: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

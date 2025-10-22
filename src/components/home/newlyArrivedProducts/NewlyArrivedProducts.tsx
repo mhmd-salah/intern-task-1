@@ -2,26 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 import Heading from "../../shared/heading/Heading";
 import Product from "../../shared/product/Product";
 import "./newlyArrivedProducts.css";
-interface TProduct {
-  thumbnail: string;
-  id: number;
-  title: string;
-  description: string;
-  category: string;
-  price: number;
-  discountPercentage: number;
-  rating: number;
-  stock: number;
-  tags: string[];
-  brand: string;
-  sku: string;
-  weight: number;
-  dimensions: {
-    width: number;
-    height: number;
-    depth: number;
-  };
-}
+import type { TProduct } from "../../../types/index";
+
 const NewlyArrivedProducts = () => {
   const { data, isLoading, error } = useQuery({
     queryKey: ["products"],
@@ -31,7 +13,7 @@ const NewlyArrivedProducts = () => {
     },
   });
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <p className="container">Loading...</p>;
   if (error) return <p>Something went wrong </p>;
 
   return (
@@ -45,9 +27,11 @@ const NewlyArrivedProducts = () => {
           {data.products.map((product: TProduct) => (
             <Product
               key={product.id}
+              id={product.id}
               title={product.title}
               img={product.thumbnail}
               price={product.price}
+              category={product.category}
             />
           ))}
         </div>

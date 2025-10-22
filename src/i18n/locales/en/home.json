@@ -24,5 +24,13 @@
     "nutsButter": "Nuts Butter",
     "seet&cerals": "Seet & Cerals",
     "flours": "Flours"
+  },
+  "banner": {
+    "imgText": "Explore our store offers now",
+    "textButton": "Shop now"
+  },
+  "bannerLeftSide": {
+    "title": "توفير العروض",
+    "paragraph": "استكشف أحدث الصفقات الحصرية على مجموعة جديدة من المنتجات المتاحة لفترة محدودة فقط. لا تفوت الفرصة للوفاء عندما تشتري بكميات كبيرة"
   }
 }
