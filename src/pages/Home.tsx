@@ -1,5 +1,5 @@
 import { Banner } from "../components";
-import { Categories } from "../components/home";
+import { BestSellers, Categories } from "../components/home";
 import HeroSection from "../components/home/HeroSection/HeroSection";
 import NewlyArrivedProducts from "../components/home/newlyArrivedProducts/NewlyArrivedProducts";
 
@@ -11,6 +11,7 @@ const Home = () => {
         <Categories />
         <NewlyArrivedProducts />
         <Banner />
+        <BestSellers/>
       </div>
     </>
   );

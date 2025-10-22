@@ -2,7 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 import Heading from "../../shared/heading/Heading";
 import Product from "../../shared/product/Product";
 import "./newlyArrivedProducts.css";
-import type { TProduct } from "../../../types/index";
+import GridList from "../../shared/gridList/GridList";
+import type { TSimpleProduct } from "../../../store/cart/cartSlice";
 
 const NewlyArrivedProducts = () => {
   const { data, isLoading, error } = useQuery({
@@ -23,7 +24,7 @@ const NewlyArrivedProducts = () => {
           <Heading>Newly Arrived Products</Heading>
           <a href="/">more</a>
         </div>
-        <div className="products-list">
+        {/* <div className="products-list">
           {data.products.map((product: TProduct) => (
             <Product
               key={product.id}
@@ -34,7 +35,20 @@ const NewlyArrivedProducts = () => {
               category={product.category}
             />
           ))}
-        </div>
+        </div> */}
+        <GridList<TSimpleProduct>
+          records={data.products}
+          keySelector={(p) => p.id}
+          renderItem={(p) => (
+            <Product
+              id={p.id}
+              title={p.title}
+              img={p.thumbnail}
+              category={p.category}
+              price={p.price}
+            />
+          )}
+        />
       </div>
     </div>
   );

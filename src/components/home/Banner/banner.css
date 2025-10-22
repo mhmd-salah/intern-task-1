@@ -53,11 +53,11 @@
     .container {
       flex-direction: column;
       gap: 20px;
-      .banner-side{
+      .banner-side {
         width: 100%;
         order: 1;
       }
-      .left-side{
+      .left-side {
         padding-block: 20px;
         text-align: center;
       }
