@@ -1,29 +1,28 @@
 import { useQuery } from "@tanstack/react-query";
-import Heading from "../../shared/heading/Heading";
 import Product from "../../shared/product/Product";
 import "./newlyArrivedProducts.css";
 import GridList from "../../shared/gridList/GridList";
 import type { TSimpleProduct } from "../../../store/cart/cartSlice";
 import Section from "../../shared/section/Section";
+import Head from "../../shared/head/Head";
+import { api } from "../../../api";
 
 const NewlyArrivedProducts = () => {
   const { data, isLoading, error } = useQuery({
     queryKey: ["products"],
     queryFn: async () => {
-      const res = await fetch("https://dummyjson.com/products?limit=5");
-      return res.json();
+      const res = await api.get("/products/category/groceries?limit=5");
+      console.log(res);
+      return res?.data;
     },
   });
 
   if (isLoading) return <p className="container">Loading...</p>;
   if (error) return <p>Something went wrong </p>;
-
+  const products = data?.products;
   return (
-    <Section className="newlyProducts">
-      <div className="head">
-        <Heading>Newly Arrived Products</Heading>
-        <a href="/">more</a>
-      </div>
+    <Section className="newlyProducts" marginBlockEnd="0" paddingBlock="1rem">
+      <Head title="Newly Products" />
       {/* <div className="products-list">
           {data.products.map((product: TProduct) => (
             <Product
@@ -37,7 +36,7 @@ const NewlyArrivedProducts = () => {
           ))}
         </div> */}
       <GridList<TSimpleProduct>
-        records={data.products}
+        records={products}
         keySelector={(p) => p.id}
         renderItem={(p) => (
           <Product

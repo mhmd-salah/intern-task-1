@@ -24,7 +24,7 @@ const HeroSection = () => {
     pauseOnHover: false,
   };
   return (
-    <Section className="hero">
+    <Section className="hero" marginBlockEnd="0" paddingBlock="0">
       <div className="carousel">
         <Slider {...settings}>
           {[heroImg3, heroImg4, heroImg5].map((image, index) => (

@@ -32,5 +32,14 @@
   "bannerLeftSide": {
     "title": "توفير العروض",
     "paragraph": "استكشف أحدث الصفقات الحصرية على مجموعة جديدة من المنتجات المتاحة لفترة محدودة فقط. لا تفوت الفرصة للوفاء عندما تشتري بكميات كبيرة"
+  },
+  "bestSellerTitle": "Best Sellers",
+  "suggestedTitle": "Suggested",
+  "subscribe": {
+    "subscribeHead": "Subscribe to our newsletter",
+    "subscribeParagraph": "Get the latest information about events, sales and offers",
+    "placeholder": "enter your email",
+
+    "subscribeButton": "Subscribe"
   }
 }

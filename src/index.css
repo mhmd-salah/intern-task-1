@@ -4,9 +4,7 @@
 *{
   user-select: none;
 }
-body{
-  font-family: sans-serif;
-}
+
 
 :root{
   --main-color:#56878b;

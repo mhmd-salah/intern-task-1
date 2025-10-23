@@ -30,7 +30,7 @@ const categoriesData = [
 const Categories = () => {
   const { t } = useTranslation();
   return (
-    <Section className="categories">
+    <Section className="categories" marginBlockEnd="0">
       <Heading>{t("categories")}</Heading>
       <div className="categories-list">
         {categoriesData.map((cat) => (

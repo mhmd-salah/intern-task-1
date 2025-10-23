@@ -2,6 +2,7 @@ import { Banner } from "../components";
 import { BestSellers, Categories } from "../components/home";
 import HeroSection from "../components/home/HeroSection/HeroSection";
 import NewlyArrivedProducts from "../components/home/newlyArrivedProducts/NewlyArrivedProducts";
+import Suggested from "../components/shared/suggested/Suggested";
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
         <Categories />
         <NewlyArrivedProducts />
         <Banner />
-        <BestSellers/>
+        <BestSellers />
+        <Suggested />
       </div>
     </>
   );

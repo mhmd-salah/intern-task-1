@@ -4,19 +4,21 @@ interface ISectionProps {
   children: React.ReactNode;
   className?: string;
   background?: string;
-  padding?: string;
+  paddingBlock?: string;
+  marginBlockEnd?: string;
 }
 
 const Section = ({
   children,
   className = "",
   background,
-  padding,
+  paddingBlock = "2rem",
+  marginBlockEnd = "0",
 }: ISectionProps) => {
   return (
     <section
       className={`section-wrapper ${className}`}
-      style={{ background, padding }}
+      style={{ background, paddingBlock, marginBlockEnd }}
     >
       <div className="container">{children}</div>
     </section>
