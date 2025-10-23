@@ -4,11 +4,9 @@ import { Footer, Header, Navbar } from "../components";
 const MainLayout = () => {
   return (
     <>
-      <div style={{ background: "#fafafa" }}>
-        <TopBar />
-        <Header />
-        <Navbar />
-      </div>
+      <TopBar />
+      <Header />
+      <Navbar />
       <Outlet />
       <Footer />
     </>

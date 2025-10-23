@@ -13,6 +13,7 @@ import {
   cat9,
 } from "../../../assets/categories";
 import Category from "./Category/Category";
+import Section from "../../shared/section/Section";
 
 const categoriesData = [
   { title: "yamishRamadan", imgSrc: cat1 },
@@ -29,19 +30,17 @@ const categoriesData = [
 const Categories = () => {
   const { t } = useTranslation();
   return (
-    <div className="categories">
-      <div className="container">
-        <Heading>{t("categories")}</Heading>
-        <div className="categories-list">
-          {categoriesData.map((cat) => (
-            <Category
-              title={t(`categoriesList.${cat.title}`)}
-              imgSrc={cat.imgSrc}
-            />
-          ))}
-        </div>
+    <Section className="categories">
+      <Heading>{t("categories")}</Heading>
+      <div className="categories-list">
+        {categoriesData.map((cat) => (
+          <Category
+            title={t(`categoriesList.${cat.title}`)}
+            imgSrc={cat.imgSrc}
+          />
+        ))}
       </div>
-    </div>
+    </Section>
   );
 };
 

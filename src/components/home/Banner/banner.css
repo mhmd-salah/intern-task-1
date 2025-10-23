@@ -1,6 +1,6 @@
 .banner {
   width: 100%;
-  margin-block: 20px;
+  /* margin-block: 20px; */
   padding-block: 30px;
   .container {
     display: flex;
@@ -60,6 +60,10 @@
       .left-side {
         padding-block: 20px;
         text-align: center;
+        max-width: 100%;
+        p{
+          width: 100%;
+        }
       }
     }
   }

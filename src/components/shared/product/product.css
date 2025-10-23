@@ -33,6 +33,7 @@
   }
   img {
     width: 190px;
+    max-width: 100%;
   }
   .info {
     text-align: center;

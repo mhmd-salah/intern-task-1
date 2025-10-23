@@ -9,8 +9,7 @@ import "./heroSection.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
+import Section from "../../shared/section/Section";
 
 const HeroSection = () => {
   const settings = {
@@ -25,23 +24,25 @@ const HeroSection = () => {
     pauseOnHover: false,
   };
   return (
-    <div className="hero">
-      <div className="container">
-        <div className="carousel">
-          <Slider {...settings}>
-            {[heroImg3, heroImg4, heroImg5].map((image, index) => (
-              <div key={index} className="slide">
-                <img src={image} alt={`Slide ${index}`} className="carousel-img" />
-              </div>
-            ))}
-          </Slider>
-        </div>
-        <div className="left-side">
-          <img src={heroImg1} alt="" />
-          <img src={heroImg2} alt="" />
-        </div>
+    <Section className="hero">
+      <div className="carousel">
+        <Slider {...settings}>
+          {[heroImg3, heroImg4, heroImg5].map((image, index) => (
+            <div key={index} className="slide">
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className="carousel-img"
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
-    </div>
+      <div className="left-side">
+        <img src={heroImg1} alt="" />
+        <img src={heroImg2} alt="" />
+      </div>
+    </Section>
   );
 };
 

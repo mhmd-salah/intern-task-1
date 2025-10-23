@@ -1,11 +1,7 @@
+import Section from "../../shared/section/Section";
+
 const BestSellers = () => {
-  return (
-    <div className="bestSeller">
-      <div className="container">
-        
-      </div>
-    </div>
-  );
+  return <Section className="bestSeller">Best Seller</Section>;
 };
 
 export default BestSellers;

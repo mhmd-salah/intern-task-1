@@ -4,6 +4,7 @@ import Product from "../../shared/product/Product";
 import "./newlyArrivedProducts.css";
 import GridList from "../../shared/gridList/GridList";
 import type { TSimpleProduct } from "../../../store/cart/cartSlice";
+import Section from "../../shared/section/Section";
 
 const NewlyArrivedProducts = () => {
   const { data, isLoading, error } = useQuery({
@@ -18,13 +19,12 @@ const NewlyArrivedProducts = () => {
   if (error) return <p>Something went wrong </p>;
 
   return (
-    <div className="newlyProducts">
-      <div className="container">
-        <div className="head">
-          <Heading>Newly Arrived Products</Heading>
-          <a href="/">more</a>
-        </div>
-        {/* <div className="products-list">
+    <Section className="newlyProducts">
+      <div className="head">
+        <Heading>Newly Arrived Products</Heading>
+        <a href="/">more</a>
+      </div>
+      {/* <div className="products-list">
           {data.products.map((product: TProduct) => (
             <Product
               key={product.id}
@@ -36,21 +36,20 @@ const NewlyArrivedProducts = () => {
             />
           ))}
         </div> */}
-        <GridList<TSimpleProduct>
-          records={data.products}
-          keySelector={(p) => p.id}
-          renderItem={(p) => (
-            <Product
-              id={p.id}
-              title={p.title}
-              img={p.thumbnail}
-              category={p.category}
-              price={p.price}
-            />
-          )}
-        />
-      </div>
-    </div>
+      <GridList<TSimpleProduct>
+        records={data.products}
+        keySelector={(p) => p.id}
+        renderItem={(p) => (
+          <Product
+            id={p.id}
+            title={p.title}
+            img={p.thumbnail}
+            category={p.category}
+            price={p.price}
+          />
+        )}
+      />
+    </Section>
   );
 };
 

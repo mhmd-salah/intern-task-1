@@ -12,17 +12,17 @@ const TopBar = () => {
   }, [i18n.language]);
 
   return (
-    <div className="topBar ">
+    <div className="top-bar ">
       <div className="container">
-        <div className="topBar-links">
+        <div className="top-bar-links">
           <NavLink to="/">{t("privacyPolicy")}</NavLink>
           <NavLink to="/">{t("returnPolicy")}</NavLink>
           <NavLink to="/">{t("contactUs")}</NavLink>
         </div>
 
-        <div className="topBar-free-shipping">⚡ {t("freeShipping")}</div>
+        <div className="top-bar-free-shipping">⚡ {t("freeShipping")}</div>
 
-        <div className="topBar-language">
+        <div className="top-bar-language">
           <select
             value={i18n.language}
             onChange={(e) => i18n.changeLanguage(e.target.value)}
