@@ -5,15 +5,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
-import { Cart, Home } from "../pages";
+import { Cart, Home, ProductDetails } from "../pages";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import NotFound from "../pages/notfound/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<MainLayout />}>
       <Route element={<Home />} path="/" />
+      <Route element={<ProductDetails />} path="/product/:id" />
       <Route element={<Cart />} path="/cart" />
+      <Route element={<NotFound />} path="/*" />
     </Route>
   )
 );

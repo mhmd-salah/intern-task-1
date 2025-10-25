@@ -1,9 +1,10 @@
-import Section from "../components/shared/section/Section";
+import Section from "../../components/shared/section/Section";
 import "./cart.css";
-import { useAppSelector } from "../store/hooks";
-import emptyImg from "../assets/Empty-rafiki.png";
-import { CheckoutAside, ProductCart } from "../components/cart";
-import { ScrollToTopButton } from "../components";
+import { useAppSelector } from "../../store/hooks";
+import { CheckoutAside, ProductCart } from "../../components/cart";
+import { ScrollToTopButton } from "../../components";
+import emptyImg from "../../assets/Empty-rafiki.png"
+
 
 const Cart = () => {
   const { items } = useAppSelector((state) => state.cart);

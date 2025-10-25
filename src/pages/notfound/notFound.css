@@ -1,0 +1,8 @@
+.not-found{
+  height: calc(100vh - 327px);
+  display: grid;
+  place-content: center;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #777;
+}

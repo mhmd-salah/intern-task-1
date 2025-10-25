@@ -28,10 +28,30 @@ const Suggested = () => {
     autoplaySpeed: 3000,
     arrows: false,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024, 
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, 
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, 
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <Section className="suggested" marginBlock="0">
+    <Section className="suggested">
       <Head title={t("suggestedTitle")} />
       {isLoading ? (
         "Products Loading.."
