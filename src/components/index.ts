@@ -8,3 +8,4 @@ export { default as Banner } from "./home/Banner/Banner";
 export { default as Suggested } from "./shared/suggested/Suggested";
 export { default as Subscribe } from "./shared/subscribe/Subscribe";
 export { default as ScrollToTopButton } from "./shared/scrollToTopButton/ScrollToTopButton";
+export { default as ScrollToTopWhenPathnameChange } from "./shared/scrollToTopWhenPathnameChange/ScrollToTopWhenPathnameChange";

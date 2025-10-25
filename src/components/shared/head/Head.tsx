@@ -1,3 +1,4 @@
+import { IoIosArrowForward } from "react-icons/io";
 import Heading from "../heading/Heading";
 import "./head.css";
 
@@ -11,7 +12,9 @@ const Head = ({ title, moreHref = "/" }: IHeadProps) => {
     <div className="head">
       <div className="container">
         <Heading>{title}</Heading>
-        <a href={moreHref}> More</a>
+        <a href={moreHref}>
+          More <IoIosArrowForward />
+        </a>
       </div>
     </div>
   );

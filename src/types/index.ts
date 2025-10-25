@@ -1,4 +1,6 @@
 export interface TProduct {
+  comment: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
+  reviewerName: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
   thumbnail: string;
   id: number;
   title: string;

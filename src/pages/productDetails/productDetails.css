@@ -105,6 +105,27 @@
             font-size: 1.3em;
             color: #777;
           }
+          .reviews {
+            .review-item {
+              width: 300px;
+              margin-bottom: 10px;
+              padding: 10px;
+              border-bottom: 1px solid #eee;
+              .head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                background-color: white;
+                color: black;
+                padding: 7px 10px;
+                border-radius: 7px;
+              }
+              & > p {
+                padding: 0 10px;
+              }
+            }
+          }
           .form-side {
             form {
               margin-top: 15px;
@@ -140,6 +161,9 @@
     .eval-body {
       flex-direction: column;
       text-align: center;
+      .review-item {
+        margin-inline: auto;
+      }
     }
     form {
       textarea {

@@ -5,10 +5,12 @@
     justify-content: space-between;
     a {
       font-size: 18px;
-      text-decoration: underline;
       text-transform: capitalize;
       color: var(--main-color);
       font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 3px;
     }
   }
 }

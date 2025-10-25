@@ -16,14 +16,16 @@ const Product = (product: {
   const dispatch = useDispatch<AppDispatch>();
 
   return (
-    <Link to={`/product/${product.id}`}>
+    <>
       <div className="product-card">
         <div className="add-fiv">
           <FaHeart />
         </div>
         <img src={product.img} alt="" />
         <div className="info">
-          <h3 className="title">{product.title}</h3>
+          <Link to={`/product/${product.id}`}>
+            <h3 className="title">{product.title}</h3>
+          </Link>
           <p className="price">{product.price} $</p>
           <button
             onClick={() =>
@@ -42,7 +44,7 @@ const Product = (product: {
           </button>
         </div>
       </div>
-    </Link>
+    </>
   );
 };
 
