@@ -5,10 +5,11 @@ export default defineConfig({
   plugins: [react()],
   css: {
     postcss: {
-      plugins: [ tailwindcss()],
+      plugins: [tailwindcss()],
     },
   },
-  server:{
-    port:3000
-  }
+  server: {
+    port: 3000,
+  },
+  base: "/intern-task-1/",
 });

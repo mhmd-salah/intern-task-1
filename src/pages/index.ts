@@ -1,3 +1,3 @@
 export { default as Home } from "./home/Home";
 export { default as Cart } from "./cart/Cart";
-export { default as ProductDetails } from "./productDetails/productDetails";
+export { default as ProductDetails } from "./productDetails/ProductDetails";

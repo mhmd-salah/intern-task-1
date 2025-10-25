@@ -9,7 +9,7 @@ export const useGetProductsByCategory = (category: string, limit: number) => {
       const res = await api.get(
         `/products/category/${category}?limit=${limit}`
       );
-      return res.data;
+      return res.data?.data;
     },
   });
 };

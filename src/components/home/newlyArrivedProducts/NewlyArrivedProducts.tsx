@@ -7,11 +7,11 @@ import Head from "../../shared/head/Head";
 import { useGetProductsByCategory } from "../../../hooks/useProductsByCategory ";
 
 const NewlyArrivedProducts = () => {
-  const { data, isLoading, error } = useGetProductsByCategory("groceries",5);
+  const { data, isLoading, error } = useGetProductsByCategory("groceries", 5);
 
   if (isLoading) return <p className="container">Loading...</p>;
   if (error) return <p>Something went wrong </p>;
-  const products = data?.products;
+  const products = data;
   return (
     <Section className="newlyProducts" marginBlockEnd="0" paddingBlock="1rem">
       <Head title="Newly Products" />
@@ -28,7 +28,7 @@ const NewlyArrivedProducts = () => {
           ))}
         </div> */}
       <GridList<TSimpleProduct>
-        records={products}
+        records={products ?? []}
         keySelector={(p) => p.id}
         renderItem={(p) => (
           <Product

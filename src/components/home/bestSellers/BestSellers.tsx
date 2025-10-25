@@ -20,7 +20,7 @@ const BestSellers = () => {
     <Section className="bestSeller" background="white" paddingBlock="3rem">
       <Head title={t("bestSellerTitle")} />
       <GridList<TSimpleProduct>
-        records={data.products}
+        records={data ?? []}
         keySelector={(p) => p.id}
         renderItem={(p) => (
           <Product

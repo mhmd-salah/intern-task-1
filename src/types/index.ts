@@ -1,3 +1,5 @@
+type ReactI18NextChildren = React.ReactNode;
+
 export interface TProduct {
   comment: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
   reviewerName: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
