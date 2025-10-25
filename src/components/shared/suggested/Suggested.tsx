@@ -17,7 +17,7 @@ const Suggested = () => {
       return res?.data;
     },
   });
-  const products = data ?? [];
+  const products = data?.products ?? [];
   const settings = {
     dots: false,
     infinite: true,
