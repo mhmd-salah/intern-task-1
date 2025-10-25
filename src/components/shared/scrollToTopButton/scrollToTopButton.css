@@ -1,0 +1,25 @@
+.scroll-to-top-button {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 6rem;
+  right: 4rem;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--main-color);
+  color: white;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #fafafafa;
+  &.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  svg{
+    font-size: 1rem;
+
+  }
+}

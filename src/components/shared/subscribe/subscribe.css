@@ -22,6 +22,7 @@
     }
     .email-subscribe-side {
       color: var(--main-color);
+
       input {
         background-color: white;
         color: black;
@@ -51,6 +52,7 @@
       flex-direction: column;
       input {
         width: 100%;
+        margin-bottom: 14px;
       }
     }
   }

@@ -6,7 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const Subscribe = () => {
   const { t } = useTranslation();
   return (
-    <Section className="subscribe" marginBlock="0">
+    <Section className="subscribe" >
       <div className="description-side">
         <MdOutlineEmail />
         <div className="text">

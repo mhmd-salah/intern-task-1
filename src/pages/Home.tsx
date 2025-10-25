@@ -1,4 +1,4 @@
-import { Banner } from "../components";
+import { Banner, ScrollToTopButton } from "../components";
 import { BestSellers, Categories } from "../components/home";
 import HeroSection from "../components/home/HeroSection/HeroSection";
 import NewlyArrivedProducts from "../components/home/newlyArrivedProducts/NewlyArrivedProducts";
@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <>
       <div style={{ background: "#fafafa" }}>
+        <ScrollToTopButton />
         <HeroSection />
         <Categories />
         <NewlyArrivedProducts />

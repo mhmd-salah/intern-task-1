@@ -1,21 +1,13 @@
-import { useQuery } from "@tanstack/react-query";
 import Product from "../../shared/product/Product";
 import "./newlyArrivedProducts.css";
 import GridList from "../../shared/gridList/GridList";
 import type { TSimpleProduct } from "../../../store/cart/cartSlice";
 import Section from "../../shared/section/Section";
 import Head from "../../shared/head/Head";
-import { api } from "../../../api";
+import { useGetProductsByCategory } from "../../../hooks/useProductsByCategory ";
 
 const NewlyArrivedProducts = () => {
-  const { data, isLoading, error } = useQuery({
-    queryKey: ["products"],
-    queryFn: async () => {
-      const res = await api.get("/products/category/groceries?limit=5");
-      console.log(res);
-      return res?.data;
-    },
-  });
+  const { data, isLoading, error } = useGetProductsByCategory("groceries",5);
 
   if (isLoading) return <p className="container">Loading...</p>;
   if (error) return <p>Something went wrong </p>;

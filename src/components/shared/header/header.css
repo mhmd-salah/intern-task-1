@@ -27,6 +27,23 @@ header {
         font-size: 17px;
         font-weight: bold;
         padding-inline: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .dropdown-icon {
+          width: 19px;
+          height: 19px;
+          background-color: var(--main-color);
+          border-radius: 50%;
+          display: flex;
+          padding: 4px;
+          justify-content: center;
+          align-items: center;
+          svg {
+            color: white;
+          }
+        }
       }
       input {
         border-inline-start: 1px solid rgb(222, 222, 222);

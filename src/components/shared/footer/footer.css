@@ -21,7 +21,6 @@
       h3 {
         font-weight: bold;
         text-transform: capitalize;
-
       }
       .footer-columns {
         display: flex;
@@ -55,14 +54,14 @@
             display: flex;
             gap: 20px;
             margin-block: 15px;
-            li{
+            li {
               width: 40px;
               height: 40px;
               background-color: var(--secondary-color);
               display: grid;
               place-content: center;
               border-radius: 50%;
-              svg{
+              svg {
                 color: var(--main-color);
               }
             }
@@ -70,6 +69,7 @@
         }
       }
     }
-
   }
 }
+
+

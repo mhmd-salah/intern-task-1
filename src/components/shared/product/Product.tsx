@@ -22,7 +22,7 @@ const Product = (product: {
       <img src={product.img} alt="" />
       <div className="info">
         <h3 className="title">{product.title}</h3>
-        <p className="price">{product.price} LE</p>
+        <p className="price">{product.price} $</p>
         <button
           onClick={() =>
             dispatch(

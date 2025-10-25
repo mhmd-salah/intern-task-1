@@ -2,6 +2,7 @@ import "./header.css";
 import logo from "../../../assets/logo.png";
 import { CiSearch } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
+import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
   const { t } = useTranslation();
   return (
@@ -12,7 +13,12 @@ const Header = () => {
         </div>
 
         <div className="search">
-          <button className="catBtn">{t("searchBtn")}</button>
+          <button className="catBtn">
+            {t("searchBtn")}{" "}
+            <div className="dropdown-icon">
+              <IoIosArrowDown />
+            </div>
+          </button>
           <input type="text" placeholder={t("placeholderSearch")} />
           <button className="searchIcon">
             <CiSearch className="icon" />

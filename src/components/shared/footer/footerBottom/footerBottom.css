@@ -4,3 +4,10 @@
   color: var(--main-color);
   font-weight: bold;
 }
+
+
+@media(max-width:500px){
+  .footer-bottom{
+    font-size: 13px;
+  }
+}
