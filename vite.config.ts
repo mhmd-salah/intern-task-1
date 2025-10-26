@@ -11,5 +11,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  // base: "/intern-task-1/",
+  base: "/intern-task-1/",
 });

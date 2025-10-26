@@ -8,15 +8,15 @@ import MainLayout from "../layout/MainLayout";
 import { Cart, Home, ProductDetails } from "../pages";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-// import NotFound from "../pages/notfound/NotFound";
+import NotFound from "../pages/notfound/NotFound";
 
 const router = createHashRouter(
   createRoutesFromElements(
-    <Route element={<MainLayout />} >
+    <Route element={<MainLayout />}>
       <Route element={<Home />} index />
       <Route element={<ProductDetails />} path="/product/:id" />
       <Route element={<Cart />} path="/cart" />
-      {/* <Route element={<NotFound />} path="/*" /> */}
+      <Route element={<NotFound />} path="/*" />
     </Route>
   )
 );
