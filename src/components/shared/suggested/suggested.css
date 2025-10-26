@@ -1,3 +1,21 @@
-.suggested{
+.suggested {
   padding-block: 2rem;
+  .slick-slider,
+  .slick-list,
+  .slick-track {
+    width: 100%;
+  }
+}
+.suggested {
+  width: 100%;
+  overflow: hidden;
+}
+
+.suggested .swiper {
+  width: 100%;
+  height: auto;
+}
+
+.suggested {
+  min-width: 0; /* مهم جدًا في الcontainers داخل grid أو flex */
 }

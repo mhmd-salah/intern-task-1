@@ -1,4 +1,5 @@
 .scroll-to-top-button {
+  z-index: 11111;
   width: 40px;
   height: 40px;
   position: fixed;
@@ -18,8 +19,13 @@
     opacity: 1;
     transform: scale(1);
   }
-  svg{
+  svg {
     font-size: 1rem;
+  }
+}
 
+@media (max-width: 992px) {
+  .scroll-to-top-button {
+    right: 1rem;
   }
 }

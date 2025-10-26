@@ -1,5 +1,6 @@
 .product-card {
   background-color: white;
+  width: 100%;
   padding: 10px 10px 30px;
   margin-block: 20px;
   margin-inline: 8px;
