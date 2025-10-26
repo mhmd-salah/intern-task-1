@@ -11,7 +11,11 @@ const NewlyArrivedProducts = () => {
 
   if (isLoading) return <p className="container">Loading...</p>;
   if (error) return <p>Something went wrong </p>;
-  const products = data;
+  // const products = data ?? [];
+  const products: TSimpleProduct[] = Array.isArray(data)
+    ? data
+    : data?.products ?? [];
+
   return (
     <Section className="newlyProducts" marginBlockEnd="0" paddingBlock="1rem">
       <Head title="Newly Products" />
@@ -28,7 +32,7 @@ const NewlyArrivedProducts = () => {
           ))}
         </div> */}
       <GridList<TSimpleProduct>
-        records={products ?? []}
+        records={products}
         keySelector={(p) => p.id}
         renderItem={(p) => (
           <Product

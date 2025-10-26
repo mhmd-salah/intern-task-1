@@ -16,11 +16,15 @@ const BestSellers = () => {
   if (isLoading) return <p>Best Sellers Products Loading . . .</p>;
   if (isError) return <p>Something went wrong</p>;
 
+  const products: TSimpleProduct[] = Array.isArray(data)
+    ? data
+    : data?.products ?? [];
+
   return (
     <Section className="bestSeller" background="white" paddingBlock="3rem">
       <Head title={t("bestSellerTitle")} />
       <GridList<TSimpleProduct>
-        records={data ?? []}
+        records={products}
         keySelector={(p) => p.id}
         renderItem={(p) => (
           <Product

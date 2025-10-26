@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -10,9 +10,9 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 // import NotFound from "../pages/notfound/NotFound";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
-    <Route element={<MainLayout />}>
+    <Route element={<MainLayout />} >
       <Route element={<Home />} index />
       <Route element={<ProductDetails />} path="/product/:id" />
       <Route element={<Cart />} path="/cart" />
