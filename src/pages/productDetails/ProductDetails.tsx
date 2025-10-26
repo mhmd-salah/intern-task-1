@@ -25,7 +25,10 @@ const ProductDetails = () => {
       const res = await api.get(`/products/${id}`);
       return res.data;
     },
+    enabled: !!id,
   });
+  if (!data) return <p>loading</p>;
+
   return (
     <Section className="product-details" background="#fafafa">
       <ScrollToTopButton />
